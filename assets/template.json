@@ -1,0 +1,260 @@
+[{
+		"entry": "Affinity Logo",
+		"name": "$-logo",
+		"content": {
+			".draft": {
+				"type": "dir",
+				"content": {
+					"0001.afdesign": {
+						"type": "file",
+						"source": ".\\assets\\sample\\logo-sample.afdesign"
+					}
+				}
+			},
+			".assets": {
+				"type": "dir"
+			},
+			".pre-release": {
+				"type": "dir",
+				"content": {
+					"rgb.afdesign": {
+						"type": "file",
+						"source": ".\\assets\\sample\\logo-sample.afdesign"
+					},
+					"rgb.svg": {
+						"type": "file",
+						"source": ".\\assets\\sample\\logo-sample.svg"
+					},
+					"rgbm.svg": {
+						"type": "file",
+						"source": ".\\assets\\sample\\logo-sample.svg"
+					},
+					"cmyk.afdesign": {
+						"type": "file",
+						"source": ".\\assets\\sample\\logo-sample.afdesign"
+					},
+					"cmyk.pdf": {
+						"type": "file",
+						"source": ".\\assets\\sample\\logo-sample.pdf"
+					},
+					"cmykm.pdf": {
+						"type": "file",
+						"source": ".\\assets\\sample\\logo-sample.pdf"
+					}
+				}
+			},
+			"$-logo-release": {
+				"type": "dir",
+				"on_build": true,
+				"content": {
+					"Web": {
+						"type": "dir",
+						"content": {
+							"PNG": {
+								"type": "dir",
+								"content": {
+									"auto": {
+										"type": "auto",
+										"action": "svg-png",
+										"source": "%\\.pre-release\\rgb.svg",
+										"output_compression": 0,
+										"output_width": [2048, 1024, 512, 256, 128, 64],
+										"output_name": "$@!.png"
+									}
+								}
+							},
+							"SVG": {
+								"type": "dir",
+								"content": {
+									"$.svg": {
+										"type": "file",
+										"source": "%\\.pre-release\\rgb.svg"
+									},
+									"$-black.svg": {
+										"type": "file",
+										"source": "%\\.pre-release\\rgbm.svg"
+									}
+								}
+							},
+							"$.afdesign": {
+								"type": "file",
+								"source": "%\\.pre-release\\rgb.afdesign"
+							}
+						}
+					},
+					"Print": {
+						"type": "dir",
+						"content": {
+							"JPEG": {
+								"type": "dir",
+								"content": {
+									"auto": {
+										"type": "auto",
+										"action": "pdf-jpg",
+										"source": "%\\.pre-release\\cmyk.pdf",
+										"output_quality": 100,
+										"output_width": [2048, 1024, 512, 256, 128, 64],
+										"output_name": "$@!.jpg"
+									}
+								}
+							},
+							"PDF": {
+								"type": "dir",
+								"content": {
+									"$.pdf": {
+										"type": "file",
+										"source": "%\\.pre-release\\cmyk.pdf"
+									},
+									"$-black.pdf": {
+										"type": "file",
+										"source": "%\\.pre-release\\cmykm.pdf"
+									}
+								}
+							},
+							"$-CMYK.afdesign": {
+								"type": "file",
+								"source": "%\\.pre-release\\cmyk.afdesign"
+							}
+						}
+					},
+					"readme.pdf": {
+						"type": "file",
+						"source": ".\\assets\\sample\\logo-readme.pdf"
+					}
+				}
+			}
+		}
+	},
+	{
+		"entry": "Affinity Logo (Color Only)",
+		"name": "$-logo",
+		"content": {
+			".draft": {
+				"type": "dir",
+				"content": {
+					"0001.afdesign": {
+						"type": "file",
+						"source": ".\\assets\\sample\\logo-sample.afdesign"
+					}
+				}
+			},
+			".assets": {
+				"type": "dir"
+			},
+			".pre-release": {
+				"type": "dir",
+				"content": {
+					"rgb.afdesign": {
+						"type": "file",
+						"source": ".\\assets\\sample\\logo-sample.afdesign"
+					},
+					"rgb.svg": {
+						"type": "file",
+						"source": ".\\assets\\sample\\logo-sample.svg"
+					},
+					"cmyk.afdesign": {
+						"type": "file",
+						"source": ".\\assets\\sample\\logo-sample.afdesign"
+					},
+					"cmyk.pdf": {
+						"type": "file",
+						"source": ".\\assets\\sample\\logo-sample.pdf"
+					}
+				}
+			},
+			"$-logo-release": {
+				"type": "dir",
+				"on_build": true,
+				"content": {
+					"Web": {
+						"type": "dir",
+						"content": {
+							"PNG": {
+								"type": "dir",
+								"content": {
+									"auto": {
+										"type": "auto",
+										"action": "svg-png",
+										"source": "%\\.pre-release\\rgb.svg",
+										"output_compression": 0,
+										"output_width": [2048, 1024, 512, 256, 128, 64],
+										"output_name": "$@!.png"
+									}
+								}
+							},
+							"SVG": {
+								"type": "dir",
+								"content": {
+									"$.svg": {
+										"type": "file",
+										"source": "%\\.pre-release\\rgb.svg"
+									}
+								}
+							},
+							"$.afdesign": {
+								"type": "file",
+								"source": "%\\.pre-release\\rgb.afdesign"
+							}
+						}
+					},
+					"Print": {
+						"type": "dir",
+						"content": {
+							"JPEG": {
+								"type": "dir",
+								"content": {
+									"auto": {
+										"type": "auto",
+										"action": "pdf-jpg",
+										"source": "%\\.pre-release\\cmyk.pdf",
+										"output_quality": 100,
+										"output_width": [2048, 1024, 512, 256, 128, 64],
+										"output_name": "$@!.jpg"
+									}
+								}
+							},
+							"PDF": {
+								"type": "dir",
+								"content": {
+									"$.pdf": {
+										"type": "file",
+										"source": "%\\.pre-release\\cmyk.pdf"
+									}
+								}
+							},
+							"$-CMYK.afdesign": {
+								"type": "file",
+								"source": "%\\.pre-release\\cmyk.afdesign"
+							}
+						}
+					},
+					"readme.pdf": {
+						"type": "file",
+						"source": ".\\assets\\sample\\logo-readme.pdf"
+					}
+				}
+			}
+		}
+	},
+	{
+		"entry": "Affinty Social Media Cover",
+		"name": "$-cover",
+		"content": {
+			".draft": {
+				"type": "dir",
+				"content": {
+					"0001.afdesign": {
+						"type": "file",
+						"source": ".\\assets\\sample\\cover-sample.afdesign"
+					}
+				}
+			},
+			".assets": {
+				"type": "dir"
+			},
+			"$-Cover-release": {
+				"type": "dir"
+			}
+		}
+	}
+]
