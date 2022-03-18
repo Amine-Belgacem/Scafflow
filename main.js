@@ -4,10 +4,11 @@ const path = require('path')
 
 function createWindow () {
   const mainWindow = new BrowserWindow({
-    'minWidth':900,
-    'width':900,
-    'height':800,
-    'minHeight': 800,
+    'minWidth':800,
+    'width':800,
+    'height':600,
+    'minHeight': 600,
+    icon: __dirname + '/icon.ico',
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
       nodeIntegration: true
@@ -15,7 +16,7 @@ function createWindow () {
   })
 
   mainWindow.loadFile('app.html')
-  // mainWindow.setMenuBarVisibility(false)
+    mainWindow.setMenuBarVisibility(false)
 }
 
 app.whenReady().then(createWindow)
