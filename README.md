@@ -1,6 +1,6 @@
 # Scafflow
 
-Scafflow is a CLI tool for organizing, packaging, and exporting design project files into a structured output.
+Scafflow is a CLI tool that helps designers and developers organize, package, and export project files into a clear, structured output.
 
 ## Features
 - Organizes project assets and workspace folders
