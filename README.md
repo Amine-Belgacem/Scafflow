@@ -13,16 +13,19 @@ Scafflow is a CLI tool that helps designers and developers organize, package, an
 - GraphicsMagick installed on Windows
 
 ## Installation on Windows
-1. Install GraphicsMagick from [SourceForge](https://sourceforge.net/projects/graphicsmagick/files/graphicsmagick-binaries/)
-2. Clone this repository
+1. Install GraphicsMagick from [SourceForge](https://sourceforge.net/projects/graphicsmagick/files/graphicsmagick-binaries/).
+2. Clone this repository.
 3. Install dependencies:
-   ```bash
-   npm install
-   ```
+
+    ```bash
+    npm install
+    ```
+
 4. Start the CLI:
-   ```bash
-   npm start
-   ```
+
+    ```bash
+    npm start
+    ```
 
 ## Usage
 List projects in the workspace:
