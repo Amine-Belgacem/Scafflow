@@ -25,14 +25,24 @@ Scafflow is a CLI tool that helps designers and developers organize, package, an
    ```
 
 ## Usage
-Show the help menu:
+List projects in the workspace:
 ```bash
-node main.js --help
+node main.js list
 ```
 
-Build a project to an output folder:
+Create a new project:
 ```bash
-node main.js build --output ./dist
+node main.js create --name my-project --struct 1
+```
+
+Build a project from the workspace by ID:
+```bash
+node main.js build --id 1
+```
+
+Build a project from a directory:
+```bash
+node main.js build --path ./my-project
 ```
 
 ## Project Structure
