@@ -2,7 +2,7 @@
 		"entry": "Affinity Logo",
 		"name": "$-logo",
 		"content": {
-			".draft": {
+			"draft": {
 				"type": "dir",
 				"content": {
 					"0001.afdesign": {
@@ -11,10 +11,10 @@
 					}
 				}
 			},
-			".assets": {
+			"assets": {
 				"type": "dir"
 			},
-			".pre-release": {
+			"pre-release": {
 				"type": "dir",
 				"content": {
 					"rgb.afdesign": {
@@ -56,7 +56,7 @@
 									"auto": {
 										"type": "auto",
 										"action": "svg-png",
-										"source": "%\\.pre-release\\rgb.svg",
+										"source": "%\\pre-release\\rgb.svg",
 										"output_compression": 0,
 										"output_width": [2048, 1024, 512, 256, 128, 64],
 										"output_name": "$@!.png"
@@ -68,17 +68,17 @@
 								"content": {
 									"$.svg": {
 										"type": "file",
-										"source": "%\\.pre-release\\rgb.svg"
+										"source": "%\\pre-release\\rgb.svg"
 									},
 									"$-black.svg": {
 										"type": "file",
-										"source": "%\\.pre-release\\rgbm.svg"
+										"source": "%\\pre-release\\rgbm.svg"
 									}
 								}
 							},
 							"$.afdesign": {
 								"type": "file",
-								"source": "%\\.pre-release\\rgb.afdesign"
+								"source": "%\\pre-release\\rgb.afdesign"
 							}
 						}
 					},
@@ -91,7 +91,7 @@
 									"auto": {
 										"type": "auto",
 										"action": "pdf-jpg",
-										"source": "%\\.pre-release\\cmyk.pdf",
+										"source": "%\\pre-release\\cmyk.pdf",
 										"output_quality": 100,
 										"output_width": [2048, 1024, 512, 256, 128, 64],
 										"output_name": "$@!.jpg"
@@ -103,17 +103,17 @@
 								"content": {
 									"$.pdf": {
 										"type": "file",
-										"source": "%\\.pre-release\\cmyk.pdf"
+										"source": "%\\pre-release\\cmyk.pdf"
 									},
 									"$-black.pdf": {
 										"type": "file",
-										"source": "%\\.pre-release\\cmykm.pdf"
+										"source": "%\\pre-release\\cmykm.pdf"
 									}
 								}
 							},
 							"$-CMYK.afdesign": {
 								"type": "file",
-								"source": "%\\.pre-release\\cmyk.afdesign"
+								"source": "%\\pre-release\\cmyk.afdesign"
 							}
 						}
 					},
@@ -129,7 +129,7 @@
 		"entry": "Affinity Logo (Color Only)",
 		"name": "$-logo",
 		"content": {
-			".draft": {
+			"draft": {
 				"type": "dir",
 				"content": {
 					"0001.afdesign": {
@@ -138,10 +138,10 @@
 					}
 				}
 			},
-			".assets": {
+			"assets": {
 				"type": "dir"
 			},
-			".pre-release": {
+			"pre-release": {
 				"type": "dir",
 				"content": {
 					"rgb.afdesign": {
@@ -175,7 +175,7 @@
 									"auto": {
 										"type": "auto",
 										"action": "svg-png",
-										"source": "%\\.pre-release\\rgb.svg",
+										"source": "%\\pre-release\\rgb.svg",
 										"output_compression": 0,
 										"output_width": [2048, 1024, 512, 256, 128, 64],
 										"output_name": "$@!.png"
@@ -187,13 +187,13 @@
 								"content": {
 									"$.svg": {
 										"type": "file",
-										"source": "%\\.pre-release\\rgb.svg"
+										"source": "%\\pre-release\\rgb.svg"
 									}
 								}
 							},
 							"$.afdesign": {
 								"type": "file",
-								"source": "%\\.pre-release\\rgb.afdesign"
+								"source": "%\\pre-release\\rgb.afdesign"
 							}
 						}
 					},
@@ -206,7 +206,7 @@
 									"auto": {
 										"type": "auto",
 										"action": "pdf-jpg",
-										"source": "%\\.pre-release\\cmyk.pdf",
+										"source": "%\\pre-release\\cmyk.pdf",
 										"output_quality": 100,
 										"output_width": [2048, 1024, 512, 256, 128, 64],
 										"output_name": "$@!.jpg"
@@ -218,13 +218,13 @@
 								"content": {
 									"$.pdf": {
 										"type": "file",
-										"source": "%\\.pre-release\\cmyk.pdf"
+										"source": "%\\pre-release\\cmyk.pdf"
 									}
 								}
 							},
 							"$-CMYK.afdesign": {
 								"type": "file",
-								"source": "%\\.pre-release\\cmyk.afdesign"
+								"source": "%\\pre-release\\cmyk.afdesign"
 							}
 						}
 					},
@@ -240,7 +240,7 @@
 		"entry": "Affinty Social Media Cover",
 		"name": "$-cover",
 		"content": {
-			".draft": {
+			"draft": {
 				"type": "dir",
 				"content": {
 					"0001.afdesign": {
@@ -249,7 +249,7 @@
 					}
 				}
 			},
-			".assets": {
+			"assets": {
 				"type": "dir"
 			},
 			"$-Cover-release": {

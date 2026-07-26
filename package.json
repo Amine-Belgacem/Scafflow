@@ -1,31 +1,20 @@
 {
-  "name": "Despack",
-  "version": "1.0.0",
-  "description": "Design project packaging software",
+  "name": "scafflow",
+  "version": "2.0.3",
+  "description": "A smart tool to organize, package, and export project files seamlessly.",
   "main": "main.js",
-  "scripts": {
-    "start": "electron ."
-  },
-  "repository": "https://github.com/Amine-Belkacem/Despack",
-  "keywords": [
-  ],
-  "author": "Amine Belkacem",
+  "scripts": {},
+  "repository": "https://github.com/Amine-Belkacem/scafflow",
+  "keywords": [],
+  "author": "Amine Belgacem",
   "license": "CC0-1.0",
-  "devDependencies": {
-    "electron": "^8.2.0",
-    "electron-packager": "^15.4.0"
-  },
   "dependencies": {
-    "bootstrap": "^4.4.1",
+    "chalk": "^4.1.2",
     "check-types": "^11.1.2",
-    "datatables.net-bs4": "^1.10.20",
-    "electron-package": "^0.1.0",
-    "electron-store": "^5.1.1",
-    "gm": "^1.23.1",
+    "cli-table3": "^0.6.5",
+    "gm": "^1.25.1",
     "image-size": "^0.8.3",
-    "jquery": "^3.5.0",
     "load-json-file": "^6.2.0",
-    "popper.js": "^1.16.1",
     "sharp": "^0.25.2",
     "walkdir": "^0.4.1"
   }
